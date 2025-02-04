@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Travel from './components/travel';
 
 function App() {
   return (
@@ -20,10 +21,15 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+
+          <div className = "App">
+    <Travel hotel='Las Vegas' flights='New York' carRentals='El Paso' />
+  </div>
         </a>
       </header>
     </div>
   );
+
 }
 
 export default App;
