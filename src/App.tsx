@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Travel from './components/travel';
 import TravelCreditCardFeatures from './Components/TravelCreditCardFeatures';
 
 function App() {
@@ -19,11 +20,16 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+
+          <div className = "App">
+    <Travel hotel='Las Vegas' flights='New York' carRentals='El Paso' />
+  </div>
         </a>
         <TravelCreditCardFeatures/>
       </header>
     </div>
   );
+
 }
 
 export default App;
