@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Travel from './Components/travel';
-import TravelCreditCardFeatures from './Components/TravelCreditCardFeatures';
+import Travel from './components/travel';
+import TravelCreditCardFeatures from './components/TravelCreditCardFeatures';
 
 function App() {
   return (
