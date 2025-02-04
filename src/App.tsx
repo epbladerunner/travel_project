@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Travel from './components/travel';
+import Travel from './Components/travel';
 import TravelCreditCardFeatures from './Components/TravelCreditCardFeatures';
 
 function App() {
