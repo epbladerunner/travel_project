@@ -2,10 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Travel from './components/travel';
-<<<<<<< Updated upstream
-=======
 import TravelCreditCardFeatures from './Components/TravelCreditCardFeatures';
->>>>>>> Stashed changes
 
 function App() {
   return (
