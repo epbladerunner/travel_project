@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eaedf4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Style the menu container */
+menu[type="list"] {
+  list-style-type: none;  /* Removes default list styling */
+  padding: 0;  /* Removes any default padding */
+  margin: 0;  /* Removes any default margin */
+}
+
+/* Style each list item within the menu */
+menu[type="list"] li {
+  margin-bottom: 10px;  /* Adds space between list items */
+}
+
+/* Style the links in the menu */
+menu[type="list"] li a {
+  text-decoration: none;  /* Removes the underline from links */
+  color: #007BFF;  /* Sets a blue color for the links */
+  font-size: 16px;  /* Sets the font size */
+  font-weight: bold;  /* Makes the text bold */
+  padding: 5px 10px;  /* Adds some padding around the link */
+  display: inline-block;  /* Ensures the padding works properly */
+}
+
+/* Change link color on hover */
+menu[type="list"] li a:hover {
+  color: #0056b3;  /* Darker blue when hovered */
+  background-color: #e0e0e0;  /* Light gray background on hover */
+  border-radius: 5px;  /* Adds rounded corners on hover */
+}
+
+/* Style for the card container using the id */
+#card {
+  background-color: #f9f9f9;  /* Light gray background for the card */
+  border-radius: 8px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for the card */
+  padding: 20px;  /* Add some padding inside the card */
+  max-width: 400px;  /* Set a max-width for the card */
+  margin: 20px auto;  /* Center the card horizontally with some margin */
+  text-align: center;  /* Center the text inside the card */
+}
+
+/* Style for the h2 (title) inside the card */
+#card h2 {
+  font-size: 24px;  /* Set the font size for the heading */
+  font-weight: bold;  /* Make the heading bold */
+  color: #333;  /* Dark gray text color */
+  margin-bottom: 15px;  /* Space below the heading */
+}
+
+/* Style for the paragraph text inside the card */
+#card p {
+  font-size: 16px;  /* Set the font size for the paragraph */
+  color: #999;  /* Lighter gray for the paragraph text */
+  line-height: 1.6;  /* Increase line height for readability */
+}
+
+.HomeScreen{
+  background-color: #763737;
+
 }

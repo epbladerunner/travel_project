@@ -1,33 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import Travel from './components/travel';
-import TravelCreditCardFeatures from './components/TravelCreditCardFeatures';
+
+import {  Route, Routes, } from 'react-router-dom';
+
+import {Home} from './components/pages/home';
+import{ About} from './components/pages/about';
+import {UserProfile} from './components/pages/user-profile';
+import {Blog} from './components/pages/blog';
+import{Bookings} from './components/pages/Bookings';
+import {Plan} from './components/pages/Plan';
+
+import {Support} from './components/pages/Support';
+import {Nav} from './components/common/nav'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-
-          <div className = "App">
-    <Travel hotel='Las Vegas' flights='New York' carRentals='El Paso' />
-  </div>
-        </a>
-        <TravelCreditCardFeatures/>
-      </header>
-    </div>
+ 
+    <Routes>  
+    <Route path="/" element = {<Nav/>}>
+    <Route index element = {<Home/>}/>
+    <Route path="/about" element={<About />} />
+    <Route path="/blog" element={<Blog />} />
+    <Route path="/Plan" element={< Plan/>} />
+    <Route path="/user-profile" element={<UserProfile />} />
+    <Route path="/Bookings" element={<Bookings/>} />
+    <Route path="/Support" element={<Support />} />
+  </Route>
+</Routes>
   );
 
 }
