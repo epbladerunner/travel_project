@@ -3,33 +3,29 @@ import logo from './logo.svg';
 import './App.css';
 import Travel from './components/travel';
 import TravelCreditCardFeatures from './components/TravelCreditCardFeatures';
+import { SearchBar } from './components/common/search';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/common/nav';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Home from './pages/home-page';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-
-          <div className = "App">
-    <Travel hotel='Las Vegas' flights='New York' carRentals='El Paso' />
-  </div>
-        </a>
-        <TravelCreditCardFeatures/>
-      </header>
-    </div>
+    <><Router>
+      <div>
+        <Navbar />
+        <SearchBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router><TravelCreditCardFeatures /></>
   );
-
-}
+};
 
 export default App;
